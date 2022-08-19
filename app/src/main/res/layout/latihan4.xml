@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/abu"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardsatu"
+        android:layout_width="1000dp"
+        android:layout_height="600dp"
+        android:backgroundTint="@color/purple_700"
+        app:cardCornerRadius="200dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-20dp"
+        tools:layout_editor_absoluteY="-143dp">
+
+        <RelativeLayout
+            android:id="@+id/relsatu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginBottom="200dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Profil"
+                android:textColor="@color/awan"
+                android:textSize="100dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tex4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:text="e"
+                android:textColor="@color/orange"
+                android:textSize="100dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="260dp"
+                android:id="@+id/logobar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_baseline_qr_code_2_24"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardsatu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp">
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="150dp"
+            android:text="Your Username"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/user"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/orange"
+            android:text="    ID User                                        null"
+            android:textSize="50dp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/id"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/orange"
+            android:text="    Password"
+            android:textSize="50dp" />
+
+        <EditText
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/pass"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/laut"
+            android:gravity="center"
+            android:text="Logout"
+            android:textSize="50dp" />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
+        android:src="@drawable/qrgambar"
+        android:layout_marginBottom="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="415dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/relativeLayout3"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/home"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_home_24"/>
+            <ImageView
+                android:id="@+id/scen"
+                android:layout_marginLeft="275dp"
+                android:layout_toRightOf="@id/home"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_qr_code_scanner_24"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="275dp"
+                android:layout_toRightOf="@id/scen"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_baseline_manage_accounts_24" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
